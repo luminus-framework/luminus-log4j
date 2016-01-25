@@ -1,4 +1,4 @@
-(ns luminus-log4j.core)
+(ns luminus.logger)
 
 (defn init [opts]
   (when-let [config (:log-config opts)]

@@ -1,4 +1,4 @@
-(defproject luminus-log4j "0.1.1"
+(defproject luminus-log4j "0.1.2"
   :description "Log4j adapter for Luminus"
   :url "https://github.com/luminus-framework/luminus-log4j"
   :license {:name "Eclipse Public License"
