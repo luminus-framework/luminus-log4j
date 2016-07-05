@@ -1,5 +1,7 @@
-(ns luminus.logger)
+(ns luminus.logger
+  (:require [clojure.java.io :as io])
+  (:import org.apache.logging.log4j.LogManager))
 
 (defn init [opts]
   (when-let [config (:log-config opts)]
-    (org.apache.log4j.PropertyConfigurator/configure config)))
+    (.setConfigLocation (LogManager/getContext false) (.toURI (io/file config)))))
